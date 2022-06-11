@@ -16,8 +16,7 @@ public class Site {
 
 
     public static void setUp() {
-        System.setProperty("webdriver.chrome.driver", "D:\\JAVA\\Lessons\\ANTARA\\at_004\\" +
-                "homeWork9CucumberAndGerkin\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
